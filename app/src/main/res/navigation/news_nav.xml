@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.mr_smart.newsexamapp.presentation.home.HomeScreen"
+        android:label="HomeScreen" >
+        <action
+            android:id="@+id/action_homeScreen_to_newsScreen"
+            app:destination="@id/newsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsScreen"
+        android:name="uz.gita.mr_smart.newsexamapp.presentation.news.NewsScreen"
+        android:label="NewsScreen" />
+</navigation>
